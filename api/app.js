@@ -7,8 +7,8 @@ var express = require("express"),
 
 
 
-mongoose.connect('mongodb://localhost:27017/notes', { useNewUrlParser: true });
-// mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost:27017/notes', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
 
 
 app.set('view engine', 'ejs');
@@ -143,7 +143,7 @@ app.delete('/:id', function(req,res) {
 
 var http = require("http");
 
-var port = "8080";
+var port = "3000";
 // var port = process.env.PORT || "8081";
 app.set("port", port);
 
@@ -159,7 +159,7 @@ var server = http.createServer(app);
 // });
 
 server.listen(process.env.PORT || 3000, function(){
-    // console.log('Server started');
+    console.log('Server started');
 });
 
 server.timeout = 1000;
