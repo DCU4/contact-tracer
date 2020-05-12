@@ -1,0 +1,28 @@
+{
+  "name": "contact-tracingapp",
+  "version": "1.0.0",
+  "description": "An app for contact tracing",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DCU4/notes.git"
+  },
+  "author": "Dylan Connor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DCU4/notes/issues"
+  },
+  "homepage": "https://github.com/DCU4/notes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.3",
+    "method-override": "^3.0.0"
+  }
+}

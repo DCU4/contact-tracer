@@ -1,0 +1,26 @@
+ul.single-note {
+  font-size:4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  li {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.65);
+    overflow-wrap: break-word;
+    &.date {
+      margin-bottom: 20px;
+    }
+  }
+  form {
+    textarea {
+      width: 100%;
+      height: 1000px;
+      background: #f2f2f2;
+      border: none;
+      font-size: 1em;
+      color: rgba(0, 0, 0, 0.65);
+      font-family: "Crimson Text", serif;
+    }
+  }
+}

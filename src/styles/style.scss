@@ -1,0 +1,69 @@
+// @import 'src/js/components/Presentational/Notes/Notes.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  line-height: 1.25;
+  width:100%;
+  height: 100%;
+
+  body {
+    padding: 0 20px;
+    background: #F2F2F2;
+    #app {
+      main {
+        font-size: 4rem;
+        
+      }
+    }
+  }
+}
+
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    opacity: 0;
+    // transform: translateX(-20%);
+  }
+
+  to {
+    // transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// @for $i from 1 through 100 {
+//   .all-notes-reveal:nth-child(#{$i}){
+//     animation: fade-in-down .4s ease-out forwards;
+//     -webkit-animation-delay: $i * 0.1s;
+//     animation-delay: $i * 0.1s - 0.3s;
+//   }
+// }

@@ -1,0 +1,59 @@
+ul.all-notes {
+  font-size:4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  &.all-notes-reveal {
+    animation: fade-in-down 0.5s ease-in forwards;
+    // animation-delay: .2s;
+  }
+  scroll-snap-type: x mandatory;  
+  li.note {
+    display: flex;
+    padding: 40px 20px;
+    border-top: 2px rgba(69, 67, 67, 0.5) solid;
+    
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-align: touch;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  // IE 10+
+    scrollbar-width: none;  // Firefox
+    &::-webkit-scrollbar { 
+      display: none;  // Safari and Chrome
+    }
+
+
+    p {
+      display: flex;
+      width: 100%;
+      span {
+        width: 50%;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.65);
+        &.date {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 0.85em;
+        }
+      }
+    }
+    form {
+      position: absolute;
+      right: -20%;
+      top: 0;
+      button {
+        background: #c10f0f;;
+        border: none;
+        color: white;
+        font-size: 1em;
+        width: 162px;
+        height: 162px;
+        font-family: "Crimson Text", serif;
+      }
+    }
+  }
+}

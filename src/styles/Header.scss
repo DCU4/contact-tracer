@@ -1,0 +1,25 @@
+header {
+    padding: 40px 20px;
+    ul {
+      list-style: none;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        font-size: 1em;
+        color: rgba(0,0,0,0.65);
+      }
+    }
+    form {
+      button {
+        font-size: 1em;
+        color: rgba(0,0,0,0.65);
+        font-family: 'Crimson Text', serif;
+        border: none;
+        border-radius: 0;
+        -webkit-border-radius:0px;
+        background: transparent;
+        -webkit-appearance:none;
+      }
+    }
+  }
