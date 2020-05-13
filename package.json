@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DCU4/notes.git"
+    "url": "git+https://github.com/DCU4/contact-tracer.git"
   },
   "author": "Dylan Connor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DCU4/notes/issues"
+    "url": "https://github.com/DCU4/contact-tracer/issues"
   },
-  "homepage": "https://github.com/DCU4/notes#readme",
+  "homepage": "https://github.com/DCU4/contact-tracer#readme",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
