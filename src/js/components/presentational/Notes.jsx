@@ -15,7 +15,7 @@ export default class Notes extends Component {
     if (!this.props || id == undefined) {
       return null; //You can change here to put a customized loading spinner
     }
-    let url = 'https://localhost:3000/' + id + "/?_method=DELETE";
+    let url = 'https://localhost:8080' + id + "/?_method=DELETE";
     // let url = "https://dc-notes.herokuapp.com/" + id + "/?_method=DELETE";
     fetch(url, {
       method: "POST",

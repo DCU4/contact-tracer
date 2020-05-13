@@ -23,7 +23,7 @@ class Folder extends Component {
   }
 
   saveNote() {
-    let url = 'http://localhost:3000/note';
+    let url = 'https://localhost:3000/note';
     // let url = "https://dc-notes.herokuapp.com/note";
     let data = "note=" + this.state.note;
 
