@@ -1,5 +1,5 @@
 {
-  "name": "contact-tracingapp",
+  "name": "contact-tracing-app",
   "version": "1.0.0",
   "description": "An app for note taking to replace the regular iOS app",
   "main": "index.js",

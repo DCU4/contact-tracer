@@ -18,8 +18,8 @@ export default class SingleNote extends Component {
       return null; //You can change here to put a customized loading spinner
     }
 
-    // let url = "https://dc-notes.herokuapp.com/" + id;
-    let url = 'https://localhost:8080' + id;
+    let url = "https://contact-trace-app.herokuapp.com/" + id;
+    // let url = 'https://localhost:8080' + id;
     fetch(url)
 		.then(res => res.json())
 		.then(
@@ -38,8 +38,8 @@ export default class SingleNote extends Component {
     if (!this.props || id == undefined) {
       return null; //You can change here to put a customized loading spinner
     }
-    let url = 'https://localhost:27017' + id + "/?_method=PUT";
-    // let url = "https://dc-notes.herokuapp.com/" + id + "/?_method=PUT";
+    // let url = 'https://localhost:27017' + id + "/?_method=PUT";
+    let url = "https://contact-trace-app.herokuapp.com/" + id + "/?_method=PUT";
     let data = "note="+this.props.note;
     fetch(url, {
       method: "POST",

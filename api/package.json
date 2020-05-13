@@ -1,5 +1,5 @@
 {
-  "name": "contact-tracingapp",
+  "name": "contact-tracing-app",
   "version": "1.0.0",
   "description": "An app for contact tracing",
   "main": "app.js",
